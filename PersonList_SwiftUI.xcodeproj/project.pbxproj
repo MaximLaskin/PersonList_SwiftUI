@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		4326FDCC2913B06E0046E365 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4326FDCB2913B06E0046E365 /* Person.swift */; };
 		4326FDCF2913B1820046E365 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4326FDCE2913B1820046E365 /* DataManager.swift */; };
+		4326FDD22913C20A0046E365 /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4326FDD12913C20A0046E365 /* ContactList.swift */; };
 		433631D029130D7700C92302 /* PersonList_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433631CF29130D7700C92302 /* PersonList_SwiftUIApp.swift */; };
-		433631D229130D7700C92302 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433631D129130D7700C92302 /* ContentView.swift */; };
 		433631D429130D7900C92302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 433631D329130D7900C92302 /* Assets.xcassets */; };
 		433631D729130D7900C92302 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 433631D629130D7900C92302 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -18,9 +18,9 @@
 /* Begin PBXFileReference section */
 		4326FDCB2913B06E0046E365 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		4326FDCE2913B1820046E365 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		4326FDD12913C20A0046E365 /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
 		433631CC29130D7700C92302 /* PersonList_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonList_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		433631CF29130D7700C92302 /* PersonList_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonList_SwiftUIApp.swift; sourceTree = "<group>"; };
-		433631D129130D7700C92302 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		433631D329130D7900C92302 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		433631D629130D7900C92302 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -36,12 +36,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4326FDCD2913B0790046E365 /* Model */ = {
+		4326FDCD2913B0790046E365 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				4326FDCB2913B06E0046E365 /* Person.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		4326FDD02913B1890046E365 /* Services */ = {
@@ -71,10 +71,10 @@
 		433631CE29130D7700C92302 /* PersonList_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				4326FDCD2913B0790046E365 /* Model */,
 				433631CF29130D7700C92302 /* PersonList_SwiftUIApp.swift */,
+				4326FDD12913C20A0046E365 /* ContactList.swift */,
+				4326FDCD2913B0790046E365 /* Models */,
 				4326FDD02913B1890046E365 /* Services */,
-				433631D129130D7700C92302 /* ContentView.swift */,
 				433631D329130D7900C92302 /* Assets.xcassets */,
 				433631D529130D7900C92302 /* Preview Content */,
 			);
@@ -161,8 +161,8 @@
 			files = (
 				4326FDCC2913B06E0046E365 /* Person.swift in Sources */,
 				4326FDCF2913B1820046E365 /* DataManager.swift in Sources */,
-				433631D229130D7700C92302 /* ContentView.swift in Sources */,
 				433631D029130D7700C92302 /* PersonList_SwiftUIApp.swift in Sources */,
+				4326FDD22913C20A0046E365 /* ContactList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
