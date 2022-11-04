@@ -12,8 +12,12 @@ struct DetailsView: View {
     var contacts: Person
     
     var body: some View {
-            VStack {
+        List() {
             Image(systemName: "person.fill")
+                    .resizable()
+                    .frame(width: 100, height: 100)
+                   
+
                 HStack {
                     Image(systemName: "phone")
                     Text("\(contacts.phone)")
@@ -22,6 +26,7 @@ struct DetailsView: View {
                     Image(systemName: "tray")
                     Text("\(contacts.email)")
                 }
+                Spacer()
 
             }
             .navigationTitle("\(contacts.fullName)")

@@ -8,16 +8,26 @@
 import SwiftUI
 
 struct InfolList: View {
-//    var contacts: [Person]
+    var contacts: [Person]
     var body: some View {
+
         List {
-            Text("")
+            ForEach(contacts, id: \.fullName) { contact in
+
+                Section("\(contact.fullName)") {
+                    VStack{
+                        Text(contact.phone)
+                        Text(contact.email)
+                    }
+                }
+            
+            }
         }
     }
 }
 
-struct InfolList_Previews: PreviewProvider {
-    static var previews: some View {
-        InfolList()
-    }
-}
+//struct InfolList_Previews: PreviewProvider {
+//    static var previews: some View {
+//        InfolList()
+//    }
+//}
