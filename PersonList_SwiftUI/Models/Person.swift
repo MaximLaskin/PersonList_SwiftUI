@@ -26,7 +26,7 @@ extension Person {
         var persons: [Person] = []
 
         let names = data.names.shuffled()
-        let surnames = data.names.shuffled()
+        let surnames = data.surnames.shuffled()
         let phones = data.phones.shuffled()
         let emails = data.emails.shuffled()
 

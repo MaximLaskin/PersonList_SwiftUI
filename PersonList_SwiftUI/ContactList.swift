@@ -11,12 +11,16 @@ struct ContactList: View {
     var contacts: [Person]
     var body: some View {
 
-        List {
-            ForEach(contacts, id: \.fullName) { contact in
-                Text(contact.fullName)
+        NavigationView {
+            List(contacts, id: \.fullName) { contact in
+                NavigationLink(destination: DetailsView(contacts: contact)) {
+                    Text(contact.fullName)
+                }
             }
+            .navigationTitle("Contact List")
         }
     }
+
 }
 
 struct ContactList_Previews: PreviewProvider {
