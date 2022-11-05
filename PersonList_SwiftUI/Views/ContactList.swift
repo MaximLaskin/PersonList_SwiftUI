@@ -12,15 +12,15 @@ struct ContactList: View {
     var body: some View {
 
         NavigationView {
-            List(contacts, id: \.fullName) { contact in
-                NavigationLink(destination: DetailsView(contacts: contact)) {
+            List(contacts) { contact in
+                NavigationLink(
+                    destination: DetailsView(contacts: contact)) {
                     Text(contact.fullName)
                 }
             }
             .navigationTitle("Contact List")
         }
     }
-
 }
 
 struct ContactList_Previews: PreviewProvider {

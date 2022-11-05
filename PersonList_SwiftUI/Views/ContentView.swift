@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct Content_View: View {
-
-    let contacts = Person.getPersonList()
-
+    
+    private let contacts = Person.getPersonList()
+    
     var body: some View {
         TabView {
             ContactList(contacts: contacts)

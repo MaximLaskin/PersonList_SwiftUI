@@ -78,10 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				433631CF29130D7700C92302 /* PersonList_SwiftUIApp.swift */,
-				4326FDD12913C20A0046E365 /* ContactList.swift */,
-				43C4776E29141FEC009C582B /* ContentView.swift */,
-				43C47772291421AD009C582B /* InfolList.swift */,
-				43C4776C29141EAA009C582B /* DetailsView.swift */,
+				4359057A29167A6B00CC7B06 /* Views */,
 				4326FDCD2913B0790046E365 /* Models */,
 				4326FDD02913B1890046E365 /* Services */,
 				433631D329130D7900C92302 /* Assets.xcassets */,
@@ -96,6 +93,17 @@
 				433631D629130D7900C92302 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4359057A29167A6B00CC7B06 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4326FDD12913C20A0046E365 /* ContactList.swift */,
+				43C4776E29141FEC009C582B /* ContentView.swift */,
+				43C47772291421AD009C582B /* InfolList.swift */,
+				43C4776C29141EAA009C582B /* DetailsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

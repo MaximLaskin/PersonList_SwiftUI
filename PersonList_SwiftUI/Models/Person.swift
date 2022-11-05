@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Person: Hashable {
+struct Person: Identifiable {
+    let id = UUID()
     let name: String
     let surname: String
     let phone: String
